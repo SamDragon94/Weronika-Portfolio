@@ -1,19 +1,30 @@
-// Filtering functionality
-const filterButtons = document.querySelectorAll('.filter-btn');
-const masonryItems = document.querySelectorAll('.item');
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const submitButton = document.querySelector('.btn');
 
-filterButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const category = btn.dataset.category;
+    submitButton.addEventListener('click', function () {
+        // Basic validation
+        const name = contactForm.name.value.trim();
+        const email = contactForm.email.value.trim();
+        const subject = contactForm.subject.value.trim();
+        const message = contactForm.message.value.trim();
 
-    masonryItems.forEach(item => {
-      if (category === 'all' || item.dataset.category === category) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+        if (!name || !email || !subject || !message) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        // Optional: Regex for basic email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Simulate form submission
+        alert(`Thank you, ${name}! Your message has been sent.\nSubject: ${subject}\nMessage: ${message}`);
+
+        // Clear the form after submission
+        contactForm.reset();
     });
-  });
 });
-
-// Lightbox effect (optional, if needed)
