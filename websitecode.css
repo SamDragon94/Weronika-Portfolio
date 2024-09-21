@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(45deg, #ffdb3b, #fe53bb, #8f51ea, #0044ff);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 2rem;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.masonry-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Interactive Button Styles (from your code) */
+/* Include the button and 3D image styles here, as provided */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
