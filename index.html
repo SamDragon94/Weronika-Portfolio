@@ -1,109 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of [Girlfriend's Name], a creative graphic designer.">
-  <title>[Girlfriend's Name] - Graphic Designer Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>[Girlfriend's Name] Portfolio</title>
 </head>
 <body>
-
-  <!-- Header with Navigation -->
-  <header>
-    <h1>[Girlfriend's Name]</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home">
-    <div class="intro">
-      <h2>Welcome to my portfolio!</h2>
-      <p>Check out my latest works as a graphic designer and artist.</p>
-      <a href="#portfolio" class="btn">See My Work</a>
-    </div>
-  </section>
-
-  <!-- Portfolio Section with Masonry Layout -->
-  <section id="portfolio">
-    <h2>My Projects</h2>
-    <div class="filters">
-      <button class="filter-btn" data-category="all">All</button>
-      <button class="filter-btn" data-category="logos">Logos</button>
-      <button class="filter-btn" data-category="web">Web Design</button>
-      <button class="filter-btn" data-category="print">Print</button>
-    </div>
-    <div class="masonry-grid">
-      <!-- Masonry items go here -->
-      <div class="item" data-category="logos">
-        <a href="project1.html"><img src="img/logo1.jpg" alt="Project 1"></a>
-      </div>
-      <div class="item" data-category="web">
-        <a href="project2.html"><img src="img/web1.jpg" alt="Project 2"></a>
-      </div>
-      <!-- Add more items as needed -->
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate graphic designer with skills in branding, illustration, and more. Download my CV below:</p>
-    <a href="CV.pdf" class="btn">Download CV</a>
-  </section>
-
-  <!-- Contact Section with Interactive Button -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject">
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <!-- Interactive Button -->
-      <button type="submit" class="btn">
-        <strong>Send Message</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
+    <header>
+        <h1>Welcome to [Girlfriend's Name] Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="masonry-layout">
+            <!-- 3D Image Gallery -->
+            <div class="box">
+                <span style="--i:1"><img src="./img/1.jpg" alt="Project 1"></span>
+                <span style="--i:2"><img src="./img/2.jpg" alt="Project 2"></span>
+                <span style="--i:3"><img src="./img/3.jpg" alt="Project 3"></span>
+                <span style="--i:4"><img src="./img/4.jpg" alt="Project 4"></span>
+                <span style="--i:5"><img src="./img/5.jpg" alt="Project 5"></span>
+                <span style="--i:6"><img src="./img/6.jpg" alt="Project 6"></span>
+                <span style="--i:7"><img src="./img/7.jpg" alt="Project 7"></span>
+                <span style="--i:8"><img src="./img/8.jpg" alt="Project 8"></span>
+                <span style="--i:9"><img src="./img/9.jpg" alt="Project 9"></span>
+                <span style="--i:10"><img src="./img/10.jpg" alt="Project 10"></span>
+            </div>
         </div>
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </button>
-    </form>
-  </section>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[Girlfriend's Bio]</p>
+        <a href="cv.pdf" download>Download CV</a>
+    </section>
 
-  <!-- Testimonial Section -->
-  <section id="testimonial">
-    <h2>Testimonial</h2>
-    <blockquote>
-      <p>Created original illustrations inspired by poetry, showcasing artistic interpretation and creativity.</p>
-      <cite>– Poetry Collection by Emma Clohessy</cite>
-    </blockquote>
-  </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="button" class="btn">
+                <strong>SPACE</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+        </form>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Connect with me: <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a></p>
-  </footer>
+    <footer>
+        <p>Follow me on <a href="https://instagram.com/[instagram_handle]" target="_blank">Instagram</a></p>
+        <p>Testimonial: [Add your testimonial here]</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
